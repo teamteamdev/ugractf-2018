@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+    site:
+        image: sdelrio/docker-minimal-nginx
+        ports:
+            - "30000:8000"
+        volumes:
+            - ${PWD}/content/:/usr/share/nginx/html
+        restart: always

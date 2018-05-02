@@ -1,0 +1,13 @@
+category:   web
+points:     50
+short:      catchit
+name:       "Catch it!"
+author:     nsychev
+description: >
+    Разработчики этого сайта готовы отдать флаг
+    каждому. Но для начала нужно решить очень
+    сложный квест!
+url: https://catchit.ugractf.ru/
+flags:
+  -
+    text:   "ugrawebissounsecure"

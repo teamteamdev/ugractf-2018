@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfd;
+    min-height: 100vh;
+}
+
+.block {
+    padding: 40px;
+    background: #fff;
+    text-align: center;
+}
+
+#button-block {
+    position: relative;
+    display: inline-block;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
