@@ -1,19 +1,19 @@
 import random
 
 plaintext = '''
-aabWHEN my love swears that she is made of truth, 
-bbaI do believe her, though I know she lies, 
-abaThat she might think me some untutor'd youth, 
-abUnskilful in the world's false forgeries. 
-bbThus vainly thinking that she thinks me young, 
-abAlthough I know my years be past the best, 
-baaI smiling credit her false-speaking tongue, 
-abbaOutfacing faults in love with love's ill rest. 
-bbbBut wherefore says my love that she is young? 
-aAnd wherefore say not I that I am old? 
-bO, love's best habit is a soothing tongue, 
-abaAnd age, in love, loves not to have years told. 
-babbTherefore I'll lie with love, and love with me, 
+ccdWHEN my love swears that she is made of truth, 
+ddcI do believe her, though I know she lies, 
+cdcThat she might think me some untutor'd youth, 
+cdUnskilful in the world's false forgeries. 
+ddThus vainly thinking that she thinks me young, 
+cdAlthough I know my years be past the best, 
+dccI smiling credit her false-speaking tongue, 
+cddcOutfacing faults in love with love's ill rest. 
+dddBut wherefore says my love that she is young? 
+cAnd wherefore say not I that I am old? 
+dO, love's best habit is a soothing tongue, 
+cdcAnd age, in love, loves not to have years told. 
+dcddTherefore I'll lie with love, and love with me, 
 Since that our faults in love thus smother'd be. 
 
 Two loves I have, of comfort and despair, 
@@ -52,7 +52,7 @@ Did court the lad with many a lovely look,
 Such looks as none could look but beauty's queen. 
 She told him stories to delight his ear; 
 She showed him favors to allure his eye; 
-To win his heart, she touch'd him here and there,--
+To win his heart, she touch'd him here and there,
 Touches so soft still conquer chastity. 
 But whether unripe years did want conceit, 
 Or he refused to take her figured proffer, 
