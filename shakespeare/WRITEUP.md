@@ -18,7 +18,7 @@ do, love's best habit is a soothing tongue,
 cdcand age, in love, loves not to have years told. 
 dcddtherefore i'll lie with love, and love with me...
 ```
-Получившиеся осмысленные слова говорят о том, что текст дешифрован коректно. Однако в начале нескольких первых строк присутствуют буквы `c` и `d`. Выпишем их:
+Получившиеся осмысленные слова говорят о том, что текст дешифрован корректно. Однако, в начале нескольких первых строк присутствуют буквы `c` и `d`. Выпишем их:
 ```
 ccd ddc cdc cd dd cd dcc cddc ddd c d cdc dcdd
 ```
