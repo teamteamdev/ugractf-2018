@@ -2,7 +2,7 @@ import sys
 import json
 
 def request():
-    request = sys.stdin.read()
+    request = input()
     
     return json.loads(request)
 
