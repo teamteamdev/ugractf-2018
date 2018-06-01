@@ -22,3 +22,11 @@ class Coupon(Model):
     class Meta:
         database = db
         
+
+class Message(Model):
+    nickname = CharField(max_length=40)
+    timestamp = TimestampField(utc=True)
+    message = TextField()
+    
+    class Meta:
+        database = db

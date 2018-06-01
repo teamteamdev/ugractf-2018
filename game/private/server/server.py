@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import transport
 import users, billing
+import os, sys
 
 METHODS = {
     "users.register": users.register,
@@ -16,7 +19,7 @@ try:
     req = transport.request()
     
     transport.reply(METHODS.get(req.get("method", ""), DEFAULT_METHOD)(**req))
-except SystemExit:
-    raise
-except:
+except (SystemExit, EOFError):
+    sys.exit(0)
+except Exception as e:
     transport.reply({"status": "bad"})

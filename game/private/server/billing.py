@@ -1,7 +1,5 @@
 from models import *
 
-BILLING_FLAG = "ugra_flag3_sup3r_d3bug_m0d3_3nab13d"
-
 def _check(number):
     if len(number) < 13 or len(number) > 19:
         return False
@@ -23,7 +21,20 @@ def buy(method, card):
         card["holder"].upper().strip() == "PETER PWNER" and
         card["expires"] == "02/28" and
         str(card["cvc"]) == "555"):
-        return {"status": "ok", "code": BILLING_FLAG}
+
+        
+        messages = []
+        for message in Message.select().order_by(Message.timestamp):
+            messages.append({
+                "nickname": message.nickname,
+                "timestamp": int(message.timestamp.timestamp()),
+                "message": message.message
+            })
+    
+        return {
+            "status": "ok",
+            "messages": messages
+        }
     else:
         return {"status": "denied"}
 

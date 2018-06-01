@@ -99,7 +99,10 @@ Processes flag purchases. **Now we accept only Vika payment system**. Visa, MIR 
 ### Returns
 
 * `status: "ok"` if payment is succeeded
-   * in this case field `code` is also present and equals to purchased item code
+   * in this case field `messages` is also present. It is array of Message objects:
+     * `nickname` — string, user name
+     * `timestamp` — integer, message timestamp
+     * `message` — message contents itself
 * `status: "invalid"` if card is invalid
 * `status: "denied"` if bank has denied the payment
 * `status: "unsupported"` if payment system is not supported now
