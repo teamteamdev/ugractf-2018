@@ -1,0 +1,19 @@
+category:   joy
+points:     200
+short:      infinitejumps
+name:       "Infinite Jumps I: Win the game"
+author:     pirotexnic27
+description: >
+    Оказывается, что Пётр Пывнер делает не только малварь, 
+    но и игры, которые пользуются популярностью, правда недавно
+    одну из его игр по какой-то причине удалили из магазинов. 
+    Мы успели сохранить одну из версий, но не смогли найти 
+    ничего подозрительного. 
+    
+    А сможете пройти игру?
+    
+    *В этом таске нужно сдавать флаг 1*
+url: https://yadi.sk/d/gQSLKnF63Ws7xq
+flags:
+  -
+    text:   "ugra_flag1_y0u_finally_made_it"

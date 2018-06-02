@@ -1,0 +1,19 @@
+category:   reverse
+points:     300
+short:      jumpinside
+name:       "Infinite Jumps II: Suspicious binaries"
+author:     pirotexnic27
+description: >
+    Оказывается, что Пётр Пывнер делает не только малварь, 
+    но и игры, которые пользуются популярностью, правда недавно
+    одну из его игр по какой-то причине удалили из магазинов. 
+    Мы успели сохранить одну из версий, но не смогли найти 
+    ничего подозрительного.
+    
+    Может у вас получится это выяснить?
+    
+    *В этом таске нужно сдавать флаг 2*
+url: https://yadi.sk/d/gQSLKnF63Ws7xq
+flags:
+  -
+    text:   "ugra_flag2_unity3ng1n3_decompilation_1s_3asy"
