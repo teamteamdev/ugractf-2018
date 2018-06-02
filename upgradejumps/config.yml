@@ -1,0 +1,20 @@
+category:   recon
+points:     400
+short:      upgradejumps
+name:       "Infinite Jumps IV: Hidden Resistance"
+author:     "pirotexnic27, nsychev, deffrian"
+description: >
+    Оказывается, что Пётр Пывнер делает не только малварь, 
+    но и игры, которые пользуются популярностью, правда недавно
+    одну из его игр по какой-то причине удалили из магазинов. 
+    Мы успели сохранить одну из версий, но не смогли найти 
+    ничего подозрительного. 
+    
+    Однако, мы считаем, что именно её он использовал для
+    передачи секретных данных своим сообщникам.
+    
+    *В этом таске нужно сдавать флаг 4*
+url: https://yadi.sk/d/gQSLKnF63Ws7xq
+flags:
+  -
+    text:   "ugra_flag4_v3ry_1mP0RTant_s3Cr3t_cHat"
