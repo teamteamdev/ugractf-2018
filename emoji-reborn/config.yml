@@ -1,0 +1,14 @@
+category:   stegano
+points:     50
+short:      emoji-reborn
+name:       "Emoji: Reborn"
+author:     nsychev
+description: >
+    Любитель эмодзи разозлился не на шутку!
+    Теперь нам не хватает бумаги, чтобы распечатать все 
+    его яростные послания!
+attachments:
+  - task.txt
+flags:
+  -
+    text:   "ugra_v3ry_3a5y_ta5k_and_th3_l0ng_flag"
