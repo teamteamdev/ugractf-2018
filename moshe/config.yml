@@ -1,0 +1,14 @@
+category:   crypto
+points:     175
+short:      moshe
+name:       "Flash"
+author:     skoro_bog
+description: >
+    Мы нашли на флешке Мойше эти два файла, но так и не 
+    смогли узнать, что же он прячет.
+attachments:
+  - flag.zip
+  - image.png
+flags:
+  -
+    text:   "ugraseemstobetoopowerfulforthat"
