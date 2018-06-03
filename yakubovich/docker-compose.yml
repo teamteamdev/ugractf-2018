@@ -5,4 +5,6 @@ services:
         volumes:
             - ./private:/usr/share/nginx/html
         command: ["nginx", "-g", "daemon off;"]
+        ports:
+            - "30001:8080"
         restart: always
