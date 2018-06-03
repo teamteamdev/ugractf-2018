@@ -1,0 +1,13 @@
+category:   ppc
+points:     100
+short:      fibonacci
+name:       "Fibonacci Salad"
+author:     "nsychev"
+description: >
+    Салат Фибоначчи состоит из остатков вчерашнего салата, 
+    смешанных с остатками позавчерашнего.    
+attachments:
+  - task.txt
+flags:
+  -
+    text:   "ugra_f1b0nacci_sa1ad_1sn't_ta5ty_bu7_v3ry_hug3_t0_ca1cu1at3!"
