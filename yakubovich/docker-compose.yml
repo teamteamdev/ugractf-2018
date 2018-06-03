@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+    web:
+        image: sdelrio/docker-minimal-nginx
+        volumes:
+            - ./private:/usr/share/nginx/html
+        command: ["nginx", "-g", "daemon off;"]
+        restart: always
