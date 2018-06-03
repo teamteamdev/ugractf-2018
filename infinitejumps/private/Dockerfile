@@ -7,4 +7,4 @@ RUN apk add --update --no-cache gcc postgresql-dev python3-dev musl-dev socat &&
 
 COPY server /app
 CMD ["socat", "-T", "5", "tcp-l:31337,pktinfo,reuseaddr,fork", "exec:/app/server.py"]
-EXPOSE 1234
+EXPOSE 31337
