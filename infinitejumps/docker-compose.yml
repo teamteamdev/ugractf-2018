@@ -6,5 +6,5 @@ services:
             context: ./private
             dockerfile: Dockerfile
         ports:
-            - 31337
+            - "31337:31337"
         restart: always
