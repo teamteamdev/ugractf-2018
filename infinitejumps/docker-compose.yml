@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+    server:
+        image: ugractf/infinitejumps
+        build:
+            context: ./private
+            dockerfile: Dockerfile
+        restart: always
