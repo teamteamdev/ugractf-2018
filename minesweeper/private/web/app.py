@@ -10,11 +10,14 @@ bot = Bot(TOKEN)
 @app.route('/post/', methods=['POST'])
 def send_results():
     try:
-        chat_id = request.form["chatId"]
-        message_id = request.form["messageId"]
-        user_id = request.form["userId"]
-        score = request.form["score"]
-        bot.setGameScore(user_id=user_id, score=score, chat_id=chat_id, message_id=message_id)
+        chat_id = int(request.form["chatId"])
+        message_id = int(request.form["messageId"])
+        user_id = int(request.form["userId"])
+        score = int(request.form["score"])
+        try:
+            bot.setGameScore(user_id=user_id, score=score, chat_id=chat_id, message_id=message_id)
+        except:
+            pass
         
         try:
             user = User.get(User.id == user_id)
