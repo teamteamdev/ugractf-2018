@@ -1,24 +1,26 @@
 version: "3.6"
 services:
     bot:
-        image: python:alpine
+        image: ugractf/minesweeper-bot
+        build:
+            context: ./private
+            dockerfile: Dockerfile.bot
         depends_on:
             - postgres
         volumes:
             - ./private/bot:/app/bot/
             - ./private/common:/app/common/
-        environment: 
-            PYTHONPATH: /app/
-        working_dir: /app/bot/
-        command: ["python3", "bot.py"]
         restart: always
     web:
+        image: ugractf/minesweeper-web
         build:
             context: ./private
-            dockerfile: Dockerfile
+            dockerfile: Dockerfile.web
         ports: 
             - "30002:8000"
-        image: ugractf/minesweeper-web
+        volumes:
+            - ./private/web:/app/web/
+            - ./private/common:/app/common
         depends_on:
             - postgres
         restart: always
