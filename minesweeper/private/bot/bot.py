@@ -1,5 +1,6 @@
 import logging
 from telegram.ext import *
+from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from common.models import *
 from common.config import *
 import time
@@ -20,7 +21,8 @@ def help(bot, update):
    
 def flag(bot, update):
     if update.message.from_user.id != update.message.chat.id:
-        update.message.reply_text(text="I don't send flag in group chats! Please go PM")
+        update.message.reply_text(text="I would not send the flag in a group chat. PM me!", reply_markup=InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="PM", url="https://t.me/petersweeperbot")]]))
+        return
     try:
         user = User.get(User.id == update.message.from_user.id)
         
