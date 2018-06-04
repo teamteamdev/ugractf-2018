@@ -24,7 +24,7 @@ def send_results():
             user.highscore = max(user.highscore, score)
             user.save()
         except:
-            User.create(id=id, highscore=score)        
+            User.create(id=user_id, highscore=score)        
         
         if score >= 200:
             try:
