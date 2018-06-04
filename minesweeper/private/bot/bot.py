@@ -1,7 +1,7 @@
 import logging
 from telegram.ext import *
 from common.models import *
-from common.secret import *
+from common.config import *
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s",
                     level = logging.INFO)

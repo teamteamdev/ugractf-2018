@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template
 from telegram import *
-from .models import *
-from .secret import TOKEN
+from common.models import *
+from common.config import TOKEN
 
 app = Flask(__name__)
 bot = Bot(TOKEN)
