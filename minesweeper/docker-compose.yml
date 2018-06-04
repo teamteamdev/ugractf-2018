@@ -1,0 +1,29 @@
+version: "3.6"
+services:
+    bot:
+        image: ugractf/minesweeper-bot
+        build:
+            context: ./private
+            dockerfile: Dockerfile.bot
+        depends_on:
+            - postgres
+        volumes:
+            - ./private/bot:/app/bot/
+            - ./private/common:/app/common/
+        restart: always
+    web:
+        image: ugractf/minesweeper-web
+        build:
+            context: ./private
+            dockerfile: Dockerfile.web
+        ports: 
+            - "30002:8000"
+        volumes:
+            - ./private/web:/app/web/
+            - ./private/common:/app/common
+        depends_on:
+            - postgres
+        restart: always
+    postgres:
+        image: postgres:alpine
+        restart: always

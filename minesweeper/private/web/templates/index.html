@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>PeterSweeper</title>
+    <link rel="stylesheet" type="text/css" href="static/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="static/script.js"></script>
+</head>
+<body>
+    <div id="start-page">
+        <p id="title">PeterSweeper</p>
+        <br>
+        <button id="start">START</button>
+        <p>click — open cell, double click — flag cell</p>
+    </div>
+    <div id="game-page">
+        <p id="timer">00:00</p>
+        <table id="grid" cellpadding="0" cellspacing="0"></table>
+        <br>
+        <button class="restart">RESTART</button>
+    </div>
+    <div id="result-page">
+        <p id="result-time"></p>
+        <p id="result-score"></p>
+        <button class="restart">RESTART</button>
+    </div>
+</body>
+</html>
