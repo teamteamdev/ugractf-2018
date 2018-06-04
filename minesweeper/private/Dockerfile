@@ -1,9 +1,9 @@
 FROM python:alpine
 
 RUN apk add --update --no-cache gcc postgresql-dev python3-dev musl-dev && \
-    pip3 install -r flask peewee psycopg2 && \
+    pip3 install flask peewee psycopg2 && \
     rm -r /root/.cache && \
-    apk del build-base linux-headers postgresql-dev
+    apk del gcc
 
 EXPOSE 8000
 COPY config /etc/uwsgi
