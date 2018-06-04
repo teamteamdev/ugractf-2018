@@ -24,7 +24,7 @@ def flag(bot, update):
     try:
         user = User.get(User.id == update.message.from_user.id)
         
-        if user.score < 200:
+        if user.highscore < 200:
             update.message.reply_text(text="Please get 200 points to get the flag!")
         else:
             update.message.reply_text(text="You're awesome! Here's your flag: `ugra_html_games_are_not_secure`", parse_mode="Markdown")

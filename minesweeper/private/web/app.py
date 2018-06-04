@@ -18,14 +18,14 @@ def send_results():
         
         try:
             user = User.get(User.id == user_id)
-            user.score = score
+            user.highscore = max(user.highscore, score)
             user.save()
         except:
-            User.create(id=id, score=score)        
+            User.create(id=id, highscore=score)        
         
         if score >= 200:
             try:
-                bot.send_message(chat_id=user_id, text="**Congratulations!** Now you can get your /flag!", parse_mode="Markdown")
+                bot.sendMessage(chat_id=user_id, text="**Congratulations!** Now you can get your /flag!", parse_mode="Markdown")
             except:
                 pass
         
