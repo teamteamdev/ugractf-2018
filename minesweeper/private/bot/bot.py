@@ -2,6 +2,8 @@ import logging
 from telegram.ext import *
 from common.models import *
 from common.config import *
+import time
+import sys
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s",
                     level = logging.INFO)
@@ -42,7 +44,7 @@ def callback_handler(bot, update):
     user_id = update.callback_query.from_user.id
     chat_id = update.callback_query.message.chat.id
     message_id = update.callback_query.message.message_id
-    game_url = "https://petersweeper.ugractf.ru/?userId=%s&chatId=%s&messageId=%s".format(user_id, chat_id, message_id)
+    game_url = "https://petersweeper.ugractf.ru/?userId={}&chatId={}&messageId={}".format(user_id, chat_id, message_id)
     bot.answerCallbackQuery(update.callback_query.id, url=game_url)
 
 
@@ -57,8 +59,12 @@ if __name__ == "__main__":
     dp.add_handler(CommandHandler("flag", flag))
     dp.add_handler(CallbackQueryHandler(callback_handler))
     
+    time.sleep(1500)
+    
     db.connect()
     db.create_tables([User])
+    
+    print("[+] DB connected", file=sys.stderr)
 
     updater.start_polling()
     updater.idle()
