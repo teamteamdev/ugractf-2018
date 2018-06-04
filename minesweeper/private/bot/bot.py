@@ -15,21 +15,21 @@ def error(bot, update, error):
     
 
 def help(bot, update):
-    update.reply_text(text="/play - Play Minesweeper\n/flag - Get the flag")
+    update.message.reply_text(text="/play - Play Minesweeper\n/flag - Get the flag")
     
    
 def flag(bot, update):
     if update.message.from_user.id != update.message.chat.id:
-        update.reply_text(text="I don't send flag in group chats! Please go PM")
+        update.message.reply_text(text="I don't send flag in group chats! Please go PM")
     try:
         user = User.get(User.id == update.message.from_user.id)
         
         if user.score < 200:
-            update.reply_text(text="Please get 200 points to get the flag!")
+            update.message.reply_text(text="Please get 200 points to get the flag!")
         else:
-            update.reply_text(text="You're awesome! Here's your flag: `ugra_html_games_are_not_secure`", parse_mode="Markdown")
+            update.message.reply_text(text="You're awesome! Here's your flag: `ugra_html_games_are_not_secure`", parse_mode="Markdown")
     except:
-        update.reply_text(text="Please play my awesome game to get the flag!")
+        update.message.reply_text(text="Please play my awesome game to get the flag!")
 
     
 def start(bot, update):
