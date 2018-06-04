@@ -9,6 +9,6 @@ RUN apk add --update --no-cache build-base linux-headers postgresql-dev python3-
 ENV PYTHONPATH=/app/ 
 EXPOSE 8000
 COPY config /etc/uwsgi
-WORKDIR /app/web/
+WORKDIR /app/
 
 CMD ["uwsgi", "--ini", "/etc/uwsgi/uwsgi.ini"]
