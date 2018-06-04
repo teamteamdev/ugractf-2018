@@ -16,7 +16,8 @@ services:
         build:
             context: ./private
             dockerfile: Dockerfile
-        ports: "8000:8000"
+        ports: 
+            - "30002:8000"
         image: ugractf/minesweeper-web
         depends_on:
             - postgres
