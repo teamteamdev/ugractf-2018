@@ -3,7 +3,7 @@ services:
     site:
         image: sdelrio/docker-minimal-nginx
         ports:
-            - "30000:8000"
+            - "30003:8000"
         volumes:
-            - ${PWD}/content/:/usr/share/nginx/html
+            - ./private:/usr/share/nginx/html
         restart: always
