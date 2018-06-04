@@ -59,7 +59,7 @@ if __name__ == "__main__":
     dp.add_handler(CommandHandler("flag", flag))
     dp.add_handler(CallbackQueryHandler(callback_handler))
     
-    time.sleep(1500)
+    time.sleep(1.5)
     
     db.connect()
     db.create_tables([User])
