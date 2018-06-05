@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>{{ profile.username }} on DailyNotes</h1>
+
+    {% if own %}
+        <p><a href="{% url "note_create" %}" class="button">Create a note</a></p>
+        {% if notes|length == 0 %}
+            <p>You haven't written any notes yet.</p>
+        {% endif %}
+        {% for note in notes %}
+            <hr/>
+            <h2>{{ note.title }}</h2>
+            <p class="meta">{{ note.created }}</p>
+            <p><a href="{% url "note_read" note.id %}">Read</a> · <a href="{% url "note_edit" note.id %}">Edit</a></p>
+        {% endfor %}
+    {% else %}
+        <p>Sorry, but you can't see notes of this user.</p>
+    {% endif %}
+{% endblock %}

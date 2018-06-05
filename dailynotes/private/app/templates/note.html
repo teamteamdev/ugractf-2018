@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <h1>{{ note.title }}</h1>
+    <p class="meta">{{ note.created }} · <a href="{% url "note_edit" note.id %}">Edit</a></p>
+    <p>{{ note.description }}</p>
+{% endblock %}

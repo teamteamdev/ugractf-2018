@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block main %}
+    {% if note %}
+    <h1>Editing &laquo;{{ note.title }}&raquo;</h1>
+    <p class="meta">{{ note.created }} · <a href="{% url "note_read" note.id %}">Read</a></p>
+    {% else %}
+    <h1>Creating new note</h1>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <p class="error">{{ error }}</p>
+
+        <p><input type="text" required maxlength="100" placeholder="Title" name="title" value="{{ note.title }}"/></p>
+        <p><textarea name="description" maxlength="3000" placeholder="Your note.." required>{{ note.description }}</textarea></p>
+
+        <p><button>Save</button></p>
+    </form>
+{% endblock %}
