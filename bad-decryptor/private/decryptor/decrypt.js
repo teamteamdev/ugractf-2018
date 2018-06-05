@@ -1,7 +1,7 @@
 window.onload = function() {
     let output = document.getElementById("flag");
     
-    fetch("https://alliance.ugractf.ru/tmp.txt")
+    fetch("https://alliance.ugractf.ru/flag.txt")
         .then(function(response) {
             if (response.status !== 200) {
                 throw new RuntimeError("status == " + response.status);
