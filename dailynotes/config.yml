@@ -1,0 +1,12 @@
+category:   web
+points:     150
+short:      dailynotes
+name:       Dailynotes
+author:     nsychev
+description: >
+    В 21 веке все пользуются Dailynotes — самым быстрым и надежным 
+    сервисом для хранения заметок. Угадайте, кто его создатель?
+url: https://dailynotes.ugractf.ru/
+flags:
+  -
+    text:   "ugra_very_very_dirty_web"

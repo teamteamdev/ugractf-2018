@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} · Dailynotes</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="{% static "main.css" %}" />
+</head>
+<body>
+    <nav>
+        <div class="item header">Dailynotes</div>
+        <a class="item {% if active == "profile" %}active{% endif %}" href="{% url "profile" user.id %}">Profile</a>
+        <a class="item {% if active == "settings" %}active{% endif %}" href="{% url "settings" user.id %}">Settings</a>
+        <a class="item {% if active == "edit" %}active{% endif %}" href="{% url "note_create" %}">New note</a>
+        <div class="item">You're <b>{{ user.username }}</b></div>
+        <a class="item" href="{% url "logout" %}">Log out</a>
+    </nav>
+    <main>
+{% block main %}
+        <p>This page is currently under development</p>
+{% endblock %}
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; LessChecks LLC, 2118</p>
+    </footer>
+</body>
+</html>

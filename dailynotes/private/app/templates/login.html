@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dailynotes</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="{% static "login.css" %}" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="login-block">
+            <h1 style="padding-bottom: 0; margin-bottom: 0;">Log in</h1>
+            <p class="muted-text" style="padding-top: 0.2rem; margin-top: 0;">or sign up</p>
+            {% if error %}
+                <p class="muted-text">{{ error }}</p>
+            {% endif %}
+            <form method="POST" action="">
+                {% csrf_token %}
+                <div class="field">
+                    <label for="username" class="form-text">Username</label>
+                    <input type="text" name="username" id="username" maxlength="30" required />
+                </div>
+                <div class="field">
+                    <label for="password" class="form-text">Password</label>
+                    <input type="password" name="password" id="password" maxlength="30" required />
+                </div>
+                <button>Go to Dailynotes</button>
+            </form>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="side-top">
+            <h1>Welcome to Dailynotes</h1>
+            <p><b>Dailynotes</b> is the most known notes service in the world. You can keep all of your secrets here, and
+            <b>nobody</b> will see your notes* without your login and password!</p>
+            <p>Our service is <b>146% secure</b> &mdash; even the <b>God</b> uses it! All your notes protected by new brand
+            modern <b>ROT0</b> cipher!</p>
+            <p>Hope you like <b>Dailynotes</b>!</p>
+        </div>
+        <div class="side-bottom">
+            <p class="footnote">* except for government officials</p>
+            <p class="copyright">Copyright &copy; LessChecks LLC, 2118</p>
+        </div>
+    </div>
+</body>
+</html>

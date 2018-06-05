@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic');
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Open Sans", Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        display: flex;
+    }
+
+    .wrapper {
+        flex: 2;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .wrapper {
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .sidebar {
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/static/test.png");
+    background-size: auto 146%;
+}
+
+.login-block {
+    background: #fff;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.field {
+    margin: 0.5rem;
+    min-width: 300px;
+}
+
+label {
+    display: block;
+    padding-bottom: 4px;
+}
+
+input, button {
+    font-size: 1.25rem;
+    font-family: "Open Sans", Tahoma, sans-serif;
+    box-shadow: none;
+    outline: none;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 5px;
+    background: cornflowerblue;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    color: white;
+    border-radius: 8px;
+}
+
+.muted-text {
+    color: #777;
+}
+
+.sidebar {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-top {
+    font-size: 1.5rem;
+}
+
+.side-bottom {
+    font-size: 1rem;
+    color: #777;
+}
+
+.copyright {
+    font-size: 1.25rem;
+}

@@ -1,0 +1,12 @@
+version: "3.6"
+services:
+    host:
+        build:
+            context: private
+            dockerfile: Dockerfile
+        image: ugractf/dailynotes
+        volumes:
+            - ./private/db.sqlite3:/app/db.sqlite3
+        ports:
+            - "30006:8000"
+        restart: always
