@@ -23,9 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4ws=h29ny7^c%1dki$&d0q((*z9e%albc@4oe8%ih^8-@8f-3u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["dailynotes.ugractf.ru"]
 
 
 # Application definition
