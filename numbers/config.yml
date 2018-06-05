@@ -1,0 +1,12 @@
+category:   crypto
+points:     100
+short:      numbers
+name:       "Шифр очень сложной замены"
+author:     deffrian
+description: >
+    Похоже, это криптография :=(
+attachments:
+    - file.txt
+flags:
+  -
+    text:   "ugra_ascii_is_great"
