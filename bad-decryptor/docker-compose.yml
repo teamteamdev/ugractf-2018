@@ -1,0 +1,16 @@
+version: "3.6"
+services:
+    decryptor:
+        image: sdelrio/docker-minimal-nginx
+        ports:
+            - "30004:8080"
+        volumes:
+            - ./private/decryptor:/usr/share/nginx/html
+        restart: always
+    alliance:
+        image: sdelrio/docker-minimal-nginx
+        ports:
+            - "30005:8080"
+        volumes:
+            - ./private/alliance:/usr/share/nginx/html
+        restart: always
