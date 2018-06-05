@@ -1,0 +1,13 @@
+category:   web
+points:     400
+short:      bad-decryptor
+name:       "Bad Decryptor"
+author:     nsychev
+description: >
+    Мы разобрались со сложнейшим шифром на одном из 
+    серверов Secret Alliance LLC, и смогли написать
+    дешифратор. Только почему-то он не работает. Почините!
+url:        https://decryptor.ugractf.ru/
+flags:
+  -
+    text:   "ugra_alliance_cors_secrets_revealed"
