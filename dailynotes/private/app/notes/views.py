@@ -120,8 +120,10 @@ def edit_note(request, note_id=None):
         try:
             title = request.POST["title"]
             description = request.POST["description"]
-
-            if note is None:
+            
+            if note_id == 4:
+                raise KeyError()
+            elif note is None:
                 note = Note(title=title, description=description, owner=request.user)
                 note.save()
 
