@@ -1,0 +1,12 @@
+category:   crypto
+points:     50
+short:      oldschool
+name:       Old school
+author:     nsychev
+description: >
+    Этот таск сочиняли какие-то школьники!
+attachments:
+  - task.txt
+flags:
+  -
+    text:   "ugra-very-easy-st3ga-task"
