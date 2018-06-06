@@ -1,0 +1,12 @@
+category:   joy
+points:     250
+short:      blackbox
+name:       "Black Box"
+author:     nsychev
+description: >
+    Нашли черный ящик. Открывать боимся. Что же там?
+    
+    *Обратись к организаторам, чтобы попробовать решить задание*
+flags:
+  -
+    text:   "ugrafunf0nt"
