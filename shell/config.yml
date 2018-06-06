@@ -1,0 +1,12 @@
+category:   admin
+points:     200
+short:      shell
+name:       Странный парень
+author:     nsychev, vanyaklimenko
+description: >
+    Этот парень странный. И шеллы у него странные.
+    
+    `flag@shell.ugractf.ru`, password: `verysecurepass`
+flags:
+  -
+    text:   "ugra_emacs_1_l0v3"
