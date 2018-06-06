@@ -1,0 +1,10 @@
+category:   joy
+points:     150
+short:      orgs
+name:       Quadraliteral record
+author:     nsychev
+description: >
+    Один из организаторов спрятал флаг у себя.
+flags:
+  -
+    text:   "ugra_so_hidden_much"
