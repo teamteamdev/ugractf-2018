@@ -12,6 +12,6 @@ reverse, 300 points
 >
 > *В этом таске нужно сдавать флаг 2*
 >
-> [Ссылка](https://yadi.sk/d/gQSLKnF63Ws7xq)
+> [Ссылка](https://yadi.sk/d/TYOhrD3R3X2mDW)
 
 [Write-up](WRITEUP.md)
