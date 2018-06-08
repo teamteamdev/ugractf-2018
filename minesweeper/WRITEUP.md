@@ -9,13 +9,27 @@ let sendResults = (score) => {
     let userId = parseInt(getUrlParameter("userId")),
         chatId = parseInt(getUrlParameter("chatId")),
         messageId = parseInt(getUrlParameter("messageId"));
-    let url = "/sendresults";
+    let url = "/post/";
     $.post(url, { userId: userId, score: score, chatId: chatId, messageId: messageId });
 };
 ```
 
 По всей видимости, так Сапёр отправляет результаты игры на сервер для их последующей обработки. Для этого он использует, кроме количества самих очков, `userId`, `messageId` и `chatId`. Можно заметить или интуитивно догадаться по названиям функций, что это GET-параметры, и их значения можно найти в адресной строке. Узнав их, мы можем сами сконструировать POST-запрос к серверу для передачи любого количества очков.
 
-> **TODO**: curl-запрос или что-нибудь такое
+Это можно было сделать утилитой cURL:
+
+```
+curl --data "score=9999&userId=...&chatId=...&messageId=..." https://petersweeper.ugractf.ru/post/
+```
+
+Или на Python:
+
+```
+import requests
+
+requests.post("https://petersweeper.ugractf.ru/post/", data={"userId": ..., "chatId": ..., "messageId": ..., "score": 9999})
+```
+
+После этого видим, что у нас в Телеграме стало 9999 очков. Также узнаем, что у бота есть команда `/flag`, которая теперь отдает нам флаг, если написать ему в личку.
 
 Флаг: **ugra_html_games_are_not_secure**
