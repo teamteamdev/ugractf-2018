@@ -6,3 +6,5 @@ crypto, 200 points
 > инопланетную поэзию. Сможете расшифровать?
 >
 > [Вложение](public/text.txt)
+  
+[Write-up](WRITEUP.md)
